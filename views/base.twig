@@ -49,6 +49,7 @@
 
                 <li><a href="{{ app.request.basepath }}/exterior-designs">Exterior Design</a></li>
                 <li><a href="{{ app.request.basepath }}/contact">Contact</a></li>
+                <li><span class="chip lime accent-2">Call Us at : +91 9876543210</span></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="{{ app.request.basepath }}"><i class="fa fa-home"></i></a></li>
@@ -85,20 +86,32 @@
     {% endblock %}
 
 
-
-    <footer>
-        <nav>
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="{{ app.request.basepath }}">Copyright &copy; 2015 Nakasi. All Rights Reserved</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="{{ app.request.basepath }}/about">About Us</a></li>
-                        <li><a href="{{ app.request.basepath }}/contact">Components</a></li>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright &copy; 2015 <a class="white-text" href="{{ app.request.basepath }}">Nakasi</a>. All Rights Reserved
+                <a href="#!" class="right waves-effect"><span class="chip lime accent-2 ">Call Us at : +91 9876543210</span></a>
+            </div>
+        </div>
     </footer>
+
 
 
 
