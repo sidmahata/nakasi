@@ -1,0 +1,26 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+
+
+    <div class="row">
+
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax"><img src="{{ app.request.basepath }}/images/gallery/kitchens/kitchen_op1.jpg"></div>
+            <div class="col s12">
+                <h2 class="center-align valign purple-text text-lighten-5 ">Modular Kitchens for Master Chef's</h2>\
+                <h5 class="center-align valign">Advanced Modular designs at best prices</h5>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block javascript %}
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+    </script>
+{% endblock %}
